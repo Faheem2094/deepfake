@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scannercss.css">
+    <link rel="icon" href="bg.jpg" type="image/icon type">
+    
+    <script src="scanner.js" defer></script>
+</head>
+<body>
+    <header id="top">
+        <a href="index.html"><img src="logotop.png" alt="Team Logo" id="team-logo"></a>
+        <div id="top-right">
+            <ul id="top-sub">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="scanner.html">Scanner</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="scan-mid">
+        <h1>Scan & Detect Deepfake Videos</h1>
+        <h3>Place a valid URL link or Upload a Video</h3>
+        <input id="videoUrlInput" placeholder="https://www.example.com/" />
+        <p>OR</p>
+        <div class="file-input-container">
+            <label class="custom-file-label" for="file-upload">Choose File</label>
+            <input id="fileInput" type="file" class="file-input" accept="video/*" />
+        </div>
+        <button onclick="scanVideo()">SCAN</button>
+    </main>
+    
+    <div id="result-container">
+        <h1>Deepfake Detection Report</h1>
+        <div class="result-flex">
+            <div class="result-item">
+                <h2 id="detection-status"></h2>
+                <p><strong>Video Name:</strong> <span id="video-name"></span></p>
+                <p><strong>Type:</strong> <span id="video-type"></span></p>
+                <p><strong>Size:</strong> <span id="video-size"></span></p>
+                <p><strong>Analyst Score:</strong> <span id="analyst-score"></span></p>
+                <p><strong>Video ID:</strong> <span id="video-id"></span></p>
+                <p><strong>Report ID:</strong> <span id="report-id"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: #E0E0E0;
+    min-height: 100vh;
+}
+
+body:not(.no-bg)::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-position-y: -120%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 0.5px solid hsla(0, 0%, 80%, 0.3); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.975); 
+    z-index: 1000;
+}
+
+#top-sub {
+    list-style-type: none;
+    cursor: pointer;
+    opacity: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 1.3rem;
+    padding-right: 20px;
+}
+
+#top-sub li {
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+#top-sub li a {
+    color: white;
+    text-decoration: none;
+}
+
+#top-sub li a:visited {
+    text-decoration: none;
+}
+
+#top-sub li a:hover,
+#top-sub li:hover {
+    color: tomato;
+}
+
+#team-logo {
+    padding-left: 40px;
+    width: 200px;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#top-right {
+    margin-right: 15px;
+}
+
+#top-sub span li {
+    border: 1px solid hsla(0, 0%, 80%, 0.7); 
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    display: inline;
+    transition: background-color 0.3s;
+}
+
+#top-sub span:hover {
+    color: black;
+}
+
+#top-sub span li:hover {
+    background-color: #00A8CC; 
+    color: black;
+}
+
+#top-sub span li a:hover {
+    color: black;
+}
+
+#middle {
+    padding-top: 120px;
+    margin: 0 auto;
+    max-width: 60%;
+    position: relative;
+    z-index: 1;
+}
+
+.middle-1-alt1 {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 4rem;
+    padding: 1rem;
+    margin-bottom: 7rem;
+}
+
+.middle-1-left-alt1 h1,
+.middle-1-left-alt1 h3,
+.middle-1-left-alt1 button {
+    margin-bottom: 1.5rem;
+}
+
+.middle-1-left-alt1 button {
+    margin-top: 10px;
+}
+
+.middle-1-lef-alt1t p {
+    margin-bottom: 1rem;
+}
+
+.middle-1-left-alt1 h3,
+.middle-1-left-alt1 p {
+    line-height: 25px;
+    text-align: justify;
+    color: #E0E0E0;
+}
+
+.middle-1-left-alt1 h1 {
+    color: #EF8354; 
+}
+
+.middle-1-left-alt1 button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.9rem;
+    background: linear-gradient(135deg, #00A8CC, #4FD3C4); 
+    color: white;
+    cursor: pointer;
+    border: 0.5px solid hsla(0, 0%, 80%, 0.5);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.middle-1-left-alt1 button:hover {
+    background: linear-gradient(135deg, #FF89BB, #FF65A3);
+    color: white;
+}
+
+.middle-1-right-alt1 {
+    height: 350px;
+}
+
+.middle-1-alt2 {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    gap: 4rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 4.5rem;
+}
+
+.middle-1-right-alt2 h3 {
+    margin-bottom: 1.5rem;
+}
+
+.middle-1-right-alt2 p {
+    margin-bottom: 1rem;
+}
+
+.middle-1-left-alt2 {
+    height: 350px;
+}
+
+#about-us,
+#mission,
+#solution,
+#contact {
+    background-color: rgba(58, 58, 58, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-us h1,
+#mission h2,
+#solution h2,
+#contact h2 {
+    color: #00A8CC;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-us p,
+#mission p,
+#solution p,
+#contact p {
+    color: #E0E0E0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#contact a {
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #E0E0E0;
+    border-top: 0.5px solid hsla(0, 0%, 80%, 0.3);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
